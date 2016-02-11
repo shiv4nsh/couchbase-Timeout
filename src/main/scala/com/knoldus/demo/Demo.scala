@@ -14,7 +14,7 @@ object Demo extends App {
 
   val system =ActorSystem()
 
-  val cluster = CouchbaseCluster.create("cb01.accounts.trakinvest.io");
+  val cluster = CouchbaseCluster.create("127.0.0.1");
 
   val defaultBucket = cluster.openBucket("test");
 
